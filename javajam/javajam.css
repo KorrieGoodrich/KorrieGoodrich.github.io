@@ -1,0 +1,39 @@
+/* javajam css */
+/* Global styles for the document (use the body element selector) with background color #FCEBB6; text color #221811; and Tahoma, Arial, or any sans-serif font. */
+body {background-color: #FCEBB6;
+    color: #221811;
+        font-family: 'PT Sans', sans-serif;}
+
+#wrapper {
+        background-color: #FEFAEB;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        }
+
+/* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
+header { background-color: #D2B48C;
+        color: #8C3826;
+            text-align: center;}
+
+/* Styles for the h1 element selector that configure 200% line height. */
+h1 {line-height: 200%;}
+
+/* Styles for the h2 element selector that configure #8C3826 text color. */
+h2 {color: #8C3826;}
+
+/* Styles for the nav element selector that configure centered, bold text. Hint: Use the CSS text-align and font-weight properties. */
+nav {font-weight: bold;
+        text-align: center;}
+
+/* Styles for the footer element selector that configure background color #D2B48C, small font size (.60em), italics, and centered text. */
+footer {background-color: #D2B48C;
+        font-size: .60em;
+        font-style: italic;
+            text-align: center;}
+
+/* 1. Add a <link> element to associate the web page with the javajam.css external style sheet file.
+
+2. Configure the navigation area. Remove the <b> elements which are no longer needed because you have configured bold text with CSS.
+
+3. Configure the page footer area. Remove the <small> and <i> elements—they are no longer needed since CSS is now used to configure the text. */
