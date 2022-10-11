@@ -1,17 +1,24 @@
 /* Personal Website css */
 /* Global styles for the document with background color and text color. */
-body {background-color: #aef1ff;
+body {background-color: #ffcccc;
     color: #000000;
         font-family: Tahoma, Arial, sans-serif;}
 
+#wrapper {
+        background-color: #FEFAEB;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        }
+
 /* Styles for the header element selector that configure text color, background color, and centered text. */
-header { background-color: #a7c7c4;
+header { background-color: #ffcccc;
         color: #444646;
             text-align: center;}
 
 /* Styles for the h1 element selector that configure 200% line height. */
 h1 {line-height: 200%;
-        background-color: #96c9d7;}
+        background-color: #ffcccc;}
 
 /* Styles for the h2 element selector that configure text color. */
 h2 {color: #444646;
@@ -30,7 +37,7 @@ nav {font-weight: bold;
         text-align: center;}
 
 /* Styles for the footer element selector that configure background color, small font size (.60em), italics, and centered text. */
-footer {background-color: #03109c;
+footer {background-color: #ffcccc;
         font-size: .60em;
         font-style: italic;
             text-align: center;}
