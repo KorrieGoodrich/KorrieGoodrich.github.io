@@ -1,11 +1,14 @@
 /* javajam css */
-/* Global styles for the document (use the body element selector) with background color #FCEBB6; text color #221811; and Tahoma, Arial, or any sans-serif font. */
+/* Create a list of common colors:
+         */
+
+
 body {background-color: #b6fcc9;
         background-image: url(PersonalWebsite/option4.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        color: #22111e;
+        color: #08310f;
         font-family: 'Georgia', serif;}
 
 #wrapper {background-color: #ebfeef;
@@ -18,7 +21,7 @@ body {background-color: #b6fcc9;
 
 /* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
 header {background-color: #94d2a4;
-        color: #000301;
+        color: #08310f;
         font-weight: bold;
         text-align: center;
         padding-top: 1px;
@@ -41,7 +44,6 @@ h4 {font-size: 1.2em;
 	padding-left: .5em;
 	padding-bottom: .25em;}
 
-/* Styles for the nav element selector that configure centered, bold text. Hint: Use the CSS text-align and font-weight properties. */
 nav {font-weight: bold;
         color: #268c39;
         text-align: center;
@@ -49,12 +51,27 @@ nav {font-weight: bold;
 	padding-top: 5px;
 	padding-bottom: 5px;}
 
-/* nav a {text-decoration: none;} */
+nav a {text-decoration: none;}
+
+nav a:link {color: #268c39;}
+
+nav a:visited {color: #0a5918;}
+
+nav a:hover {color: #2fb156;}
+
 
 main {display: block;
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-bottom: 2em;}
+
+main a {text-decoration: none;}
+
+main a:link{color: #268c39;}
+
+main a:visited {color: #0a5918;}
+
+main a:hover {color: #2fb156;}
 
 .details {padding-left: 20%;
         padding-right: 20%;}
@@ -75,10 +92,4 @@ footer {background-color: #8cd29b;
         font-style: italic;
         text-align: center;
         padding-bottom: 1em;
-	border-top: 2px solid #268c45;}
-
-/* 1. Add a <link> element to associate the web page with the javajam.css external style sheet file.
-
-2. Configure the navigation area. Remove the <b> elements which are no longer needed because you have configured bold text with CSS.
-
-3. Configure the page footer area. Remove the <small> and <i> elements—they are no longer needed since CSS is now used to configure the text. */
+	border-top: 2px solid #268c39;}
