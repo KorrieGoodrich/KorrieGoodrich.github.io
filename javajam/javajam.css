@@ -1,30 +1,47 @@
 /* javajam css */
+
+* { box-sizing: border-box;}
+
 /* Global styles for the document (use the body element selector) with background color #FCEBB6; text color #221811; and Tahoma, Arial, or any sans-serif font. */
 body {background-color: #FCEBB6;
-        background-image: url(A5JavaJamStarterImages/fadedroad50.jpg);
+        background-image: url(javajam_images/fadedroad50.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         color: #221811;
         font-family: 'PT Sans', sans-serif;}
 
-#wrapper {background-color: #FEFAEB;
+#wrapper {background-color: #231814;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
         min-width: 900px;
 	max-width: 1280px;
-	box-shadow: 3px 3px 3px #676767;}
+	box-shadow: 3px 3px 3px #676767;
+        padding: 0;}
 
 /* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
 header {background-color: #D2B48C;
-        color: #8C3826;
-        text-align: center;
+        background-image: url(javajam_images/coffeelogo.jpg);
+        background-repeat: no-repeat;
+        color: #231814;
+        padding-left: 240px;
         padding-top: 5px;
         padding-bottom: 5px;}
 
+
+header a {text-decoration: none;}
+
+header a:link{color: #231814;}
+
+header a:visited{color: #231814;}
+
+header a:hover{color: #FEF6C2;}
+
+
 /* Styles for the h1 element selector that configure 200% line height. */
-h1 {font-size: 3em;}
+h1 {font-size: 2.5em;
+        font-family: 'Arial', sans-serif;}
 
 /* Styles for the h2 element selector that configure #8C3826 text color. */
 h2 {color: #8C3826;}
@@ -34,24 +51,52 @@ h3, dt {color: #8C3826;}
 h4 {background-color: #D2B48C;
         font-size: 1.2em;
 	padding-left: .5em;
-	padding-bottom: .25em;}
+	padding-bottom: .25em;
+        text-transform: uppercase;
+        border-bottom: 1px solid #221811;
+        clear: left;}
 
 /* Styles for the nav element selector that configure centered, bold text. Hint: Use the CSS text-align and font-weight properties. */
-nav {font-weight: bold;
+nav {float: left;
+        font-weight: bold;
         text-align: center;
         font-size: 1.5em;
 	padding-top: 5px;
-	padding-bottom: 5px;}
+	padding-bottom: 5px;
+        width: 200px;}
 
 nav a {text-decoration: none;}
 
-main {display: block;
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-bottom: 2em;}
+nav a:link {color: #FEF6C2;}
+
+nav a:visited {color: #D2B48C;}
+
+nav a:hover {color: #CC9933;}
+
+nav ul {list-style-type: none;
+        padding-left: 0;}
+
+main {background-color: #FEF6C2;
+        display: block;
+        margin-left: 200px;
+	padding: 0 0 2em 0;
+        overflow: auto;}
+
+main h2, h3, h4, p, div, ul, dl {
+        padding-left: 3em;
+        padding-right: 2em;}
+
 
 .details {padding-left: 20%;
-        padding-right: 20%;}
+        padding-right: 20%;
+        overflow: auto;}
+
+.floatleft {float: left;
+        padding-right: 2em;
+        padding-bottom: 2em;}
+
+.onethird {width: 33%;
+        float: left;}
 
 img {border-style: none;
 	max-width: 100%;
@@ -59,9 +104,19 @@ img {border-style: none;
 
 #homehero {
         height: 300px;
-        background-image: url(A5JavaJamStarterImages/hero.jpg);
+        background-image: url(javajam_images/hero.jpg);
         background-repeat: no-repeat;
-        background-size: cover;}
+        background-size: 100% 100%;}
+
+#heromugs {height: 300px;
+        background-image: url(javajam_images/heromugs.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;}
+
+#heroguitar {height: 300px;
+        background-image: url(javajam_images/heroguitar.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;}
 
 /* Styles for the footer element selector that configure background color #D2B48C, small font size (.60em), italics, and centered text. */
 footer {background-color: #D2B48C;
@@ -70,9 +125,3 @@ footer {background-color: #D2B48C;
         text-align: center;
         padding-bottom: 1em;
 	border-top: 2px solid #8C3826;}
-
-/* 1. Add a <link> element to associate the web page with the javajam.css external style sheet file.
-
-2. Configure the navigation area. Remove the <b> elements which are no longer needed because you have configured bold text with CSS.
-
-3. Configure the page footer area. Remove the <small> and <i> elements—they are no longer needed since CSS is now used to configure the text. */
