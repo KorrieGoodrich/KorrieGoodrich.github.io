@@ -2,8 +2,174 @@
 
 * { box-sizing: border-box;}
 
-/* Global styles for the document (use the body element selector) with background color #FCEBB6; text color #221811; and Tahoma, Arial, or any sans-serif font. */
+
+/* Makes the small layout version. */
 body {background-color: #FCEBB6;
+        color: #221811;
+        font-family: 'PT Sans', sans-serif;
+        margin: 0;}
+
+#wrapper {background-color: #231814;
+        padding: 0;}
+
+header {background-color: #D2B48C;
+	background-image: url(javajam_images/cup.jpg);
+	background-repeat: no-repeat;
+	color: #231814;
+	height: 128px;
+	padding-left: 105px;
+	padding-top: 5px;
+	padding-bottom: 5px;}
+
+header a {text-decoration: none;}
+
+header a:link {color: #231814;}
+
+header a:visited {color: #231814;}
+
+header a:hover {color: #FEF6C2;}
+
+h1 {font-size: 2em;
+        font-family: 'Arial', sans-serif;}
+
+h2 {color:#8C3826}
+
+h3, dt {color:#8C3826}
+
+h4 {background-color: #D2B48C;
+	font-size: 1.2em;
+	padding-left: .5em;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #221811;
+	clear: left;}
+        
+nav {text-align: center;
+        font-size: 1.5em;}
+
+nav a {text-decoration: none;}
+
+nav a:link {color: #FEF6C2;}
+
+nav a:visited {color: #D2B48C;}
+
+nav a:hover {color: #CC9933;}
+
+nav ul {display: flex;
+	flex-direction: column;
+	font-size: 1.25em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;}
+
+nav li {border-bottom: 1px solid #FEF6C2;
+        padding: .5em 1em;
+        width: 100%;}
+
+main {background-color: #FEF6C2;
+        display: block;
+        padding: 0 0 2em 0;}
+
+h2, h3, h4, p, div, ul, dl {padding-left: 1em;
+                                padding-right: 1em;}
+
+main ul {padding-left: 2em;}
+
+
+.details {padding-left: 20%;
+        padding-right: 20%;
+        overflow: auto;}
+
+img {border-style: none;
+        max-width: 100%;
+        height: auto;}
+
+#homehero {height: 300px;
+        background-image: url(javajam_images/road.jpg);
+        background-repeat: no-repeat;
+	background-size: 100% 100%;}
+
+#heromugs {height: 300px;
+        background-image: url(javajam_images/threemugs.jpg);
+        background-repeat: no-repeat;
+	background-size: 100% 100%;}
+
+#heroguitar {height: 300px;
+        background-image: url(javajam_images/guitar.jpg);
+        background-repeat: no-repeat;
+	background-size: 100% 100%;}
+
+#mobile {display: inline;}
+
+#desktop {display: none;}
+
+footer {background-color: #D2B48C;
+        font-size: .6em;
+        font-style: italic;
+        text-align: center;
+        padding-bottom: 1em;
+        border-top: 2px solid #8C3826;}
+
+
+/* Media Query that makes the medium layout. */
+@media (min-width: 600px) {
+        header {padding-left: 0;
+                text-align: center;}
+        h1 {font-size: 3em;}
+
+        nav ul {flex-flow: row nowrap;
+                justify-content: space-around;}
+
+        nav li {border-bottom: none;}
+
+        #homehero {background-image: url(javajam_images/hero.jpg);
+                height: 50vh;}
+
+        #heromugs {background-image: url(javajam_images/heromugs.jpg);}
+
+        #heroguitar {background-image: url(javajam_images/heroguitar.jpg);}
+
+        #flow {display: flex;
+                flex-direction: row;}
+
+        #mobile {display: none;}
+
+        #desktop {display: inline;}
+
+        .details {flex-direction: row;
+                display: flex;}
+
+        h4 {margin-left: 10%;
+                margin-right: 10%;}
+}
+
+
+/* Media query that make the large layout. */
+@media (min-width: 1024px) {
+	@supports (display: grid) {
+		header {grid-area: header;}
+
+		nav {grid-area: nav;}
+
+		main {grid-area: main;}
+
+		footer {grid-area: footer;}
+
+		#wrapper {display: grid;
+			grid-template:
+				"header header"
+				"nav    main"
+				"footer footer"
+				/ 200px;}
+
+		nav ul {flex-direction: column;}
+
+		header {background-image: url(javajam_images/coffeelogo.jpg);}
+	}
+}
+
+/* OG CSS */
+/*body {background-color: #FCEBB6;
         background-image: url(javajam_images/fadedroad50.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -20,7 +186,6 @@ body {background-color: #FCEBB6;
 	box-shadow: 3px 3px 3px #676767;
         padding: 0;}
 
-/* Styles for the header element selector that configure text color #8C3826, background color #D2B48C, and centered text. */
 header {background-color: #D2B48C;
         background-image: url(javajam_images/coffeelogo.jpg);
         background-repeat: no-repeat;
@@ -40,11 +205,11 @@ header a:hover{color: #FEF6C2;}
 
 
 /* Styles for the h1 element selector that configure 200% line height. */
-h1 {font-size: 2.5em;
-        font-family: 'Arial', sans-serif;}
+/* h1 {font-size: 2.5em;
+        font-family: 'Arial', sans-serif;} */
 
 /* Styles for the h2 element selector that configure #8C3826 text color. */
-h2 {color: #8C3826;}
+/* h2 {color: #8C3826;}
 
 h3, dt {color: #8C3826;}
 
@@ -54,10 +219,10 @@ h4 {background-color: #D2B48C;
 	padding-bottom: .25em;
         text-transform: uppercase;
         border-bottom: 1px solid #221811;
-        clear: left;}
+        clear: left;} */
 
 /* Styles for the nav element selector that configure centered, bold text. Hint: Use the CSS text-align and font-weight properties. */
-nav {float: left;
+/* nav {float: left;
         font-weight: bold;
         text-align: center;
         font-size: 1.5em;
@@ -119,9 +284,8 @@ img {border-style: none;
         background-size: 100% 100%;}
 
 /* Styles for the footer element selector that configure background color #D2B48C, small font size (.60em), italics, and centered text. */
-footer {background-color: #D2B48C;
+/* footer {background-color: #D2B48C;
         font-size: .60em;
         font-style: italic;
         text-align: center;
         padding-bottom: 1em;
-	border-top: 2px solid #8C3826;}
