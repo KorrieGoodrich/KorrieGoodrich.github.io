@@ -1,0 +1,66 @@
+<!-- JavaJam Jobs page -->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korrie Goodrich &mdash; JavaJam Coffee Bar</title>
+    <meta name="description" content="JavaJam Coffee Bar Case Study">
+    <meta name="Korrie Goodrich" content="Korrie Goodrich">
+    <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
+
+    <link href="javajam.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=PT+Sans">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href = "index.html">JavaJam Coffee Bar</a></h1>
+        </header>
+
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a> </li>
+            <li><a href="music.html">Music</a> </li>
+            <li><a href="jobs.html">Jobs</a> </li>
+        </ul></nav>
+
+
+        <main>
+            <div id = "herojobs"></div>
+            <h2>Jobs at JavaJam</h2>
+            <p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
+
+            <form method = "post" action = "https://webdevbasics.net/scripts/javajam8.php">
+                <label for="myName">Name: </label>
+                <input type = "text" id = "myName" required>
+
+                <label for="myEmail">E-mail: </label>
+                <input type = "text" id = "myEmail" required>
+
+                <label for="myStart">Start Date: </label>
+                <input type = "date" id = "myStart" required>
+
+                <label for="myExperience">Experience: </label>
+                <textarea name = "myExperience" id = "myExperience" rows="2" cols="20" required></textarea>
+
+                <input type = "submit" value = "Apply Now">
+            </form>
+            </main>
+            <footer>
+                Copyright &copy; 2022 JavaJam Coffee Bar<br>
+                <a href="mailto:korrie@goodrich.com">
+                korrie@goodrich.com</a>
+            </footer>
+    </div>
+</body>
+
+</html>
