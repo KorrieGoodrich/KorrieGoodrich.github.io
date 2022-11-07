@@ -1,4 +1,5 @@
 /* Korrie Goodrich CSS */
+header, nav, main, footer { display: block; }
 
 * { box-sizing: border-box;}
 
@@ -13,7 +14,8 @@ body {background-color: #b6fcc9;
         padding: 1em 1em 1em 1em;
         overflow: auto;}
 
-#wrapper {background-color: #ebfeef;
+#wrapper {width: 90%;
+        background-color: #ebfeef;
         margin-left: auto;
         margin-right: auto;
 	box-shadow: 3px 3px 3px #676767;}
