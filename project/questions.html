@@ -1,8 +1,8 @@
-<!-- Korrie Goodrich My Work -->
+<!-- Korrie Goodrich Questions page -->
 
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset=" utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1>Korrie J. Goodrich</h1>
+            <h1>Questions</h1>
         </header>
 
         <nav><ul>
@@ -32,21 +32,24 @@
             <li><a href="questions.html">Questions</a> </li>
         </ul></nav>
 
+
         <main>
-            <p align="center"><b>On this page you will find a list of my projects and accomplishments.</b></p>
+            <h2>Questions?</h2>
+            <p>Would you like access to my work? Send me an email with the form below.</p>
 
-            <h2><a href="https://aspire.usu.edu/"><img src="PersonalWebsite/aspire.png" class="floatleft" width = 250></a></h2>
-            <p>ASPIRE stands for Advancing Sustainability through Powered Infrastructure for Roadway Electrification. ASPIRE is focused on creating 
-                electric roads which will allow for wireless charging while electric cars drive over the road.<br><br>
-                
-                During my time at ASPIRE, I created two datasets. One is a list of every electric vehicle owned and registered in 15 different states
-                throughout the United States. This dataset is over 10 million rows and required extensive cleaning. The other dataset I created was a list 
-                of most of the electric and hybrid vehicles available in the United States with different specs like the range, original MSRP, body type, 
-                number of doors, and number of seats.
-            </p>
+            <form method = "post" action = "https://korriegoodrich.github.io/project/request.html">
+                <label for="myName">Name: </label>
+                <input type = "text" id = "myName" required>
 
+                <label for="myEmail">E-mail: </label>
+                <input type = "text" id = "myEmail" required>
+
+                <label for="myquestion">How can I help? </label>
+                <textarea name = "myquestion" id = "myquestion" rows="2" cols="20" required></textarea>
+
+                <input type = "submit" value = "Send Request">
+            </form>
         </main>
-
         <footer>
             <a href="https://www.linkedin.com/in/korriejgoodrich/">LinkedIn</a>&emsp;
             <a href="https://www.instagram.com/korriekid/">Instagram</a>&emsp;
@@ -54,4 +57,5 @@
         </footer>
     </div>
 </body>
+
 </html>
