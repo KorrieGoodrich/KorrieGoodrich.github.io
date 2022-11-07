@@ -99,7 +99,7 @@ img {border-style: none;
 
 
 #RobinOutside {
-        height: 370px;
+        height: auto;
         background-image: url(PersonalWebsite/Robin/Outside.jpg);
         background-repeat: no-repeat;
         background-size: cover;}
@@ -109,6 +109,17 @@ img {border-style: none;
         background-image: url(PersonalWebsite/Robin/stuckinthebox.jpg);
         background-repeat: no-repeat;
         background-size: cover;}
+
+.aspire {float: left;
+        margin: 1% 1% 1% 1%;
+        box-shadow: none;}
+
+.floatleft {float: left;
+        margin: 1% 1% 1% 1%;}
+
+.floatright {float: right;
+        margin: 1% 1% 1% 1%;}
+
 
 #mobile {display: inline;}
 #desktop {display: none;}
@@ -131,12 +142,6 @@ form {display: flex;
         width: 80%;}
 
 input, textarea {margin-bottom: .5em;}
-
-.floatleft {float: left;
-        margin: 1% 1% 1% 1%;}
-
-.floatright {float: right;
-        margin: 1% 1% 1% 1%;}
 
 
 /* Media Query that makes the medium layout version. */
