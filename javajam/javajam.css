@@ -22,11 +22,8 @@ header {background-color: #D2B48C;
 	padding-bottom: 5px;}
 
 header a {text-decoration: none;}
-
 header a:link {color: #231814;}
-
 header a:visited {color: #231814;}
-
 header a:hover {color: #FEF6C2;}
 
 h1 {font-size: 2em;
@@ -48,11 +45,8 @@ nav {text-align: center;
         font-size: 1.5em;}
 
 nav a {text-decoration: none;}
-
 nav a:link {color: #FEF6C2;}
-
 nav a:visited {color: #D2B48C;}
-
 nav a:hover {color: #CC9933;}
 
 nav ul {display: flex;
