@@ -37,7 +37,7 @@
             <h2>Questions?</h2>
             <p>Would you like access to my work? Send me an email with the form below.</p>
 
-            <form method = "post" action = "https://korriegoodrich.github.io/project/request.php">
+            <form method = "post">
                 <label for="myName">Name: </label>
                 <input type = "text" id = "myName" required>
 
@@ -47,13 +47,21 @@
                 <label for="myquestion">How can I help? </label>
                 <textarea name = "myquestion" id = "myquestion" rows="2" cols="20" required></textarea>
 
-                <input type = "submit" value = "Send Request">
+                <button type="reset" value="Reset">Reset</button><br>
+                <button onclick="submitFunction()" type = "submit" value = "Submit">Submit</button>
+                <script src = "js/requestsent.js"></script>
             </form>
         </main>
         <footer>
-            <a href="https://www.linkedin.com/in/korriejgoodrich/">LinkedIn</a>&emsp;
+            <a href="https://www.linkedin.com/in/korriejgoodrfich/">LinkedIn</a>&emsp;
             <a href="https://www.instagram.com/korriekid/">Instagram</a>&emsp;
             <a href="mailto:korriegoodrich@gmail.com">korriegoodrich@gmail.com</a>
+        
+            <div>
+                <p id = "korriedate"></p>
+                <script src = "js/korriedate.js"></script>
+            </div>
+            
         </footer>
     </div>
 </body>
