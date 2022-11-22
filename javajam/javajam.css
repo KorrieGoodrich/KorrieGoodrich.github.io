@@ -49,23 +49,24 @@ nav a:link {color: #FEF6C2;}
 nav a:visited {color: #D2B48C;}
 nav a:hover {color: #CC9933;}
 
-nav ul {display: flex;
-	flex-direction: column;
-	font-size: 1.25em;
+nav ul {font-size: 1.25em;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;}
 
-nav li {border-bottom: 1px solid #FEF6C2;
-        padding: .5em 1em;
-        width: 100%;}
+nav li {border-bottom: 1px solid #FEF6C2;}
+
+/* These elements are taken from nav ul and nav li. This makes the menu buttons clickable. */
+nav li a {display: flex;
+        flex-direction: column;
+        padding: .5em 1em;}
 
 main {background-color: #FEF6C2;
         display: block;
         padding: 0 0 2em 0;}
 
 h2, h3, h4, p, div, ul, dl {padding-left: 1em;
-                                padding-right: 1em;}
+                        padding-right: 1em;}
 
 main ul {padding-left: 2em;}
 
@@ -98,6 +99,11 @@ img {border-style: none;
         background-repeat: no-repeat;
         background-size: 100% 100%;}
 
+#herocouch {height: 300px;
+        background-image: url(javajam_images/herocouch.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;}
+
 #mobile {display: inline;}
 
 #desktop {display: none;}
@@ -124,10 +130,21 @@ form {display: flex;
 
 input, textarea {margin-bottom: .5em;}
 
+.item {background-color: #FAF9F7;
+	margin: 1em;
+	padding: 1em;
+	overflow: auto;}
+
+.item img {float: right;}
+
+.current {text-transform: uppercase;
+	background-color: #776655;}
+
 /* Media Query that makes the medium layout. */
 @media (min-width: 600px) {
         header {padding-left: 0;
                 text-align: center;}
+        
         h1 {font-size: 3em;}
 
         nav ul {flex-flow: row nowrap;
@@ -141,6 +158,8 @@ input, textarea {margin-bottom: .5em;}
         #heromugs {background-image: url(javajam_images/heromugs.jpg);}
 
         #heroguitar {background-image: url(javajam_images/heroguitar.jpg);}
+
+        #herojobs {background-image: url(javajam_images/herojobs.jpg);}
 
         #flow {display: flex;
                 flex-direction: row;}
@@ -163,8 +182,6 @@ input, textarea {margin-bottom: .5em;}
 
         input[type = "submit"] {grid-column: 2/3;
                                 width: 9em;}
-
-        #herojobs {background-image: url(javajam_images/herojobs.jpg);}
 }
 
 
