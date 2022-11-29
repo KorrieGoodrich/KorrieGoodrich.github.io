@@ -136,13 +136,20 @@ footer {background-color: #8cd29b;
         font-size: .6em;
         font-style: italic;
         text-align: center;
-        padding-bottom: 1em;
+        padding-bottom: 5px;
         border-top: 2px solid #268c45;}
 
 footer a {text-decoration: none;}
 footer a:link {color: #0a5918;}
 footer a:visited {color: #0a5918}
 footer a:hover {color: #268c39}
+
+.footerlinks {
+        margin: 5px 5px 5px 5px;
+        box-shadow: none;
+        vertical-align: middle;}
+
+/* .korriedate {margin: 5px 5px 5px 5px;} */
 
 input, textarea {margin-bottom: .5em;}
 

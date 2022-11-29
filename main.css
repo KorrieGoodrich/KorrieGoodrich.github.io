@@ -1,6 +1,10 @@
 /* GitHub home page CSS. */
 
 body {
+	background-image: url(oldmainwinter.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
 	display: grid;
 	grid-template-areas:
 		"header header"
@@ -23,6 +27,7 @@ header {
 
 footer, main, nav {
 	padding: 20px;
+	text-decoration: none;
 }
 
 nav, footer {
@@ -115,7 +120,7 @@ footer li a {
 }
 
 footer li a:visited {
-	color: #551A8B;
+	color: #011946;
 }
 
 p {
